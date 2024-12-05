@@ -18,13 +18,40 @@ body {
   line-height: 28px;
 }
 
-/* Scrollbar */
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* Стили для всего скроллбара */
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
 ::-webkit-scrollbar {
-  background-color: transparent;
-  width: 10px;
+  width: 12px; /* Ширина вертикального скроллбара */
 }
 
+/* Стили для дорожки скроллбара */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Цвет фона трека */
+  border-radius: 12px; /* Закругленные углы трека */
+}
+
+/* Стили для ползунка скроллбара */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#21d4fd, #b721ff);
-  border-radius: 100px;
+  background: #888; /* Цвет ползунка */
+  border-radius: 12px; /* Закругленные углы ползунка */
+}
+
+/* Стили для ползунка скроллбара при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Цвет ползунка при наведении */
+}
+
+/* Стили для кнопок скроллбара */
+::-webkit-scrollbar-button {
+  background: #555; /* Цвет кнопок */
+  width: 12px;
+  height: 12px;
+
+}
+
+/* Стили для угла, образуемого пересечением горизонтального и вертикального скроллбаров */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1; /* Цвет угла */
 }
